@@ -22,5 +22,7 @@
 - **空数据异常**：跳转前校验学号、姓名是否为空，若为空则 Toast 提示并阻止跳转。
 
 
-##  仓库地址
-https://github.com/huangxuxiao/Android-Activity-Communication
+##  如何运行
+1. 使用 Android Studio 打开此项目  
+2. 连接 Android 设备或启动模拟器  
+3. 运行 `app` 模块即可
