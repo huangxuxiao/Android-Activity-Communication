@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="15sp">
+
+    <TableRow>
+        <TextView
+            android:textSize="24sp"
+            android:text="学号：" />
+        <EditText
+            android:id="@+id/stuId"
+            android:layout_weight="1" />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:textSize="24sp"
+            android:text="姓名：" />
+        <EditText
+            android:id="@+id/stuName"
+            android:layout_weight="1" />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:textSize="24sp"
+            android:text="性别：" />
+        <RadioGroup
+            android:orientation="horizontal"
+            android:id="@+id/gender">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/male"
+                android:text="男" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/female"
+                android:text="女" />
+        </RadioGroup>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:textSize="24sp"
+            android:text="学院：" />
+        <Spinner
+            android:entries="@array/list"
+            android:id="@+id/school" />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:textSize="24sp"
+            android:text="专业：" />
+        <EditText
+            android:id="@+id/stuMajor"
+            android:layout_weight="1" />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:textSize="24sp"
+            android:text="班级：" />
+        <EditText
+            android:id="@+id/stuClass"
+            android:layout_weight="1" />
+    </TableRow>
+
+    <TableRow>
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_span="2">
+            <Button
+                android:id="@+id/intentStart"
+                android:text="使用显式启动"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" />
+            <Button
+                android:id="@+id/implicitIntentStart"
+                android:text="使用隐式启动"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" />
+        </LinearLayout>
+    </TableRow>
+</TableLayout>
